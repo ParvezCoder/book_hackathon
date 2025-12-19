@@ -1,0 +1,135 @@
+.assessmentContainer {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.assessmentHeader {
+  border-bottom: 2px solid #4c77c0;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.assessmentHeader h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.assessmentForm {
+  width: 100%;
+}
+
+.questionContainer {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.questionText {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #34495e;
+  font-weight: 600;
+}
+
+.answersContainer {
+  margin-left: 20px;
+}
+
+.answerOption {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.answerOption input[type="radio"] {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.answerOption label {
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.feedback {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.correct {
+  color: #28a745;
+  background-color: #d4edda;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.incorrect {
+  color: #dc3545;
+  background-color: #f8d7da;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.submitButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+.results {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e9f7ef;
+  border-radius: 4px;
+  border-left: 4px solid #28a745;
+}
+
+.results h4 {
+  margin-top: 0;
+  color: #155724;
+}
+
+.results p {
+  margin-bottom: 0;
+  font-weight: 500;
+  color: #155724;
+}
+
+@media (max-width: 768px) {
+  .assessmentContainer {
+    padding: 15px;
+    margin: 15px 0;
+  }
+
+  .questionContainer {
+    padding: 10px;
+  }
+
+  .assessmentHeader h3 {
+    font-size: 1.3em;
+  }
+
+  .answerOption {
+    flex-direction: column;
+  }
+
+  .answerOption input[type="radio"] {
+    margin-bottom: 5px;
+  }
+}
